@@ -14,4 +14,5 @@ void draw() {
 
 void mousePressed(){
   points.add(new PVector(mouseX,mouseY));
+  ellipse(mouseX, mouseY, 5, 5);
 }
