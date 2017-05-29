@@ -14,5 +14,12 @@ void draw() {
 
 void mousePressed(){
   points.add(new PVector(mouseX,mouseY));
-  ellipse(mouseX, mouseY, 5, 5);
+  ellipse(mouseX, mouseY, 40, 40);
+  textSize(15);
+  for(int j = 0; j<points.size()-1; j++){
+    PVector p = points.get(j);
+    fill(0,255,0);
+    text(j, p.x, p.y);
+    fill(255,255,255);
+  }
 }
